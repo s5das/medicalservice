@@ -1,13 +1,12 @@
 <welcome />
 
-<search-bar class="search-bar" move="-28rpx" />
 
 <view class="main-box">
   <product-sidebar class="sidebar" items="{{ list_items }}" bind:change="handleSwitch" />
   <view class="products">
-    <view class="product">
+    <view class="product" wx:for="{{product}}" wx:key="model_id" bindtap="getservice" data-modelId ="{{item.model_id}}">
       <van-image fit="cover" lazy-load show-error show-loading radius="10rpx" width="160rpx" height="160rpx" src="https://img.yzcdn.cn/vant/cat.jpeg" />
-      <text>型号1</text>
+      <text class="title">{{item.model_name}}</text>
     </view>
   </view>
 </view>

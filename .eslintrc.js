@@ -2,19 +2,16 @@ module.exports = {
   env: {
     es2021: true,
     browser: true,
-    node: true,
+    node: true
   },
-  extends: [
-    'standard-with-typescript'
-  ],
-  overrides: [
-  ],
+  extends: ['standard-with-typescript'],
+  overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
     project: 'tsconfig.json'
   },
-  rules: {},
+  rules: { 'space-before-function-paren': 0 },
   globals: {
     wx: true,
     App: true,
@@ -23,6 +20,6 @@ module.exports = {
     getApp: true,
     Component: true,
     requirePlugin: true,
-    requireMiniProgram: true,
-  },
+    requireMiniProgram: true
+  }
 }

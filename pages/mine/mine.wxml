@@ -25,5 +25,5 @@
 </view>
 
 <view class="exit-btn">
-  <button>退出登录</button>
+  <button bindtap="logout">退出登录</button>
 </view>

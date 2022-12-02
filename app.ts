@@ -1,7 +1,0 @@
-App<MedicalDeviceAfterSaleServiceApp>({
-
-  globalData: {},
-
-  onLaunch () {}
-
-})

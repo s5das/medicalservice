@@ -1,0 +1,22 @@
+<view class="history">
+  <view class="header">
+    <view class="title">您最近工单</view>
+  </view>
+  <view class="content">
+
+    <view class="item" wx:for="{{items}}" wx:key="history_id">
+      <view class="info">
+        <view class="desc">{{item.topic}}</view>
+        <view class="date">{{item.consult_time}}</view>
+      </view>
+      <view class="operate">
+        <button bindtap="showdetail" data-kfLInk="{{item.kf_link}}">查看</button>
+      </view>
+    </view>
+
+    <view wx:if="{{pagenum>maxnum}}" style="display:flex;margin-top:20rpx;justify-content: center;color: #bbb;">
+      我是有底线的~
+    </view>
+
+  </view>
+</view>

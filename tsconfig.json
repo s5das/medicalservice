@@ -1,30 +1,27 @@
 {
   "compilerOptions": {
-    "strictNullChecks": true,
     "noImplicitAny": true,
+    "outDir": "build",
     "module": "CommonJS",
-    "target": "ES2020",
+    "target": "ES6",
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "noImplicitThis": true,
     "noImplicitReturns": true,
-    "alwaysStrict": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "strict": true,
-    "strictPropertyInitialization": true,
     "lib": ["ES2020"],
     "typeRoots": [
       "./typings"
     ]
   },
   "include": [
-    "./**/*.ts"
-  ],
+    "./**/*.ts", "app.js", "pages/mine/mine.js", "pages/index/index.js", "pages/index/search-products/search-products.js", "utils/util.js", "pages/fix/fix.js", "pages/index/detail/detail.js"],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "build/**/*"
   ]
 }

@@ -1,10 +1,12 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/index/search-products/search-products",
+    "pages/index/detail/detail",
     "pages/fix/fix",
     "pages/fix/common-issues/common-issues",
     "pages/mine/mine"
+
+
   ],
   "window": {
     "backgroundTextStyle": "light",

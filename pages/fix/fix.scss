@@ -4,10 +4,15 @@ page {
 
 .main-box {
   display: flex;
+  margin-top: 20rpx;
   justify-content: center;
   align-items: flex-start;
 }
-
+.title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .sidebar {
   position: sticky;
   top: 250rpx;
